@@ -1,0 +1,36 @@
+.menu {
+  display: flex; 
+  align-items: center;
+}
+
+.menu ul {
+  display: flex; 
+  list-style-type: none; 
+  padding: 0; 
+  align-items: center;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+
+.logo {
+  width: 100px;
+  height: 50px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.menu a.active {
+  border-top: 2px solid #890e54ff;
+}
+.test {
+  height: calc(100vh - 100px);
+  background-color: rgb(230, 230, 230);
+}

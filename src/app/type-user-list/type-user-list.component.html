@@ -1,0 +1,22 @@
+<div class="title">Type User List</div>
+<button class="add-button" routerLink="/type-user-form">Add User Type</button>
+<table>
+  <thead>
+    <tr>
+      <th (click)="sortListBy('id')"><span class="sort-arrow">&#9660;</span> ID <span class="sort-arrow">&#9650;</span></th>
+      <th (click)="sortListBy('type')"><span class="sort-arrow">&#9660;</span> User Type <span class="sort-arrow">&#9650;</span></th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let userType of userTypes">
+      <td>{{ userType.id }}</td>
+      <td>{{ userType.type }}</td>
+      <td>
+        <button class="edit-button" (click)="editUserType(userType.id)">Edit</button>
+        <button class="delete-button" (click)="deleteUserType(userType.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+ 

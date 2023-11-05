@@ -1,0 +1,76 @@
+.title {
+  background-color: #708090ff;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.add-button {
+  background-color: #890e54ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+.sort-arrow {
+  color: #80a9beff;
+  margin-left: 15px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+
+
+.delete-button {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+}
+
+th {
+  background-color: #890e54ff;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid black;
+}
+
+th:hover {
+  background-color: #6b0b41ff;
+}
+
+
+td {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: white;
+}
+
+button.edit-button {
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

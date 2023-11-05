@@ -1,0 +1,27 @@
+<div class="title">User List</div>
+<button class="add-button" routerLink="/user-form">Add an User</button>
+<table>
+  <thead>
+    <tr>
+      <th (click)="sortListBy('id')"><span class="sort-arrow">&#9660;</span> ID <span class="sort-arrow">&#9650;</span></th>
+      <th (click)="sortListBy('name')"><span class="sort-arrow">&#9660;</span> Name <span class="sort-arrow">&#9650;</span></th>
+      <th (click)="sortListBy('firstName')"><span class="sort-arrow">&#9660;</span> First Name <span class="sort-arrow">&#9650;</span></th>
+      <th (click)="sortListBy('email')"><span class="sort-arrow">&#9660;</span> Email <span class="sort-arrow">&#9650;</span></th>
+      <th (click)="sortListBy('userType')"><span class="sort-arrow">&#9660;</span> User Type <span class="sort-arrow">&#9650;</span></th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.firstName }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.userType }}</td>
+      <td>
+        <button class="edit-button" (click)="editUser(user.id)">Edit</button>
+        <button class="delete-button" (click)="deleteUser(user.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
